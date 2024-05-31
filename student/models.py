@@ -5,9 +5,9 @@ from django.db import models
 class Student(models.Model):
     choice =[
         ('IT', 'B.Sc.CSIT'),
-        ('CE', 'Computer Engineer'),
-        ('Civ_E', 'Civil Engineer'),
-        ('Ele_E', 'Electronic Engineer'),
+        ('Engineer', 'Computer Engineer'),
+        ('Engineer', 'Civil Engineer'),
+        ('Engineer', 'Electronic Engineer'),
     ]
     student_id = models.AutoField(primary_key=True)
     first_name = models.CharField(max_length=20)
